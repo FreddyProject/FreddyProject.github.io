@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <!--Specifies Unicode character encoding-->
+    <meta charset="utf-8">
+    <title>Stairs | Genetic Algorithm Simulator</title>
+    <!--Import the 'Montserrat' font-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <!--Links CSS file-->
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <div id="title">
+        <h1>Stairs</h1>
+        <h2>Genetic Algorithm Simulator</h2>
+    </div>
+
+    <!--Creates the 'Upload' and 'Clear' buttons-->
+    <!--Using Form elements, then using <label> tag to customise styling-->
+    <div id="data-manager">
+        <label class="button">
+            <input id="upload" type="file" multiple />
+            <p>Choose files</p>
+        </label>
+        <label class="button" id="clear">
+            <p>Clear files</p>
+        </label>
+    </div>
+
+    <!--Rest of this document is importing the JavaScript files-->
+    <!--Libraries-->
+    <script src="js/library/pixi.min.js"></script>
+
+    <!--misc-->
+    <script src="js/misc/vector.js"></script>
+    <script src="js/misc/queue.js"></script>
+    <script src="js/misc/tile.js"></script>
+
+    <!--Data files-->
+    <script src="js/Data/data.js"></script>
+
+    <!--Project files-->
+    <script src="js/Model/model.js"></script>
+        <!--misc-->
+    <script src="js/Model/misc/scene_manager.js"></script>
+        <!--menu-->
+    <script src="js/Model/menu/menu.js"></script>
+        <!--world-->
+    <script src="js/Model/world/block.js"></script>
+    <script src="js/Model/world/tilemap.js"></script>
+    <script src="js/Model/world/player.js"></script>
+    <script src="js/Model/world/world.js"></script>
+            <!--game-->
+    <script src="js/Model/world/game/player_user.js"></script>
+    <script src="js/Model/world/game/game.js"></script>
+            <!--simulation-->
+    <script src="js/Model/world/simulation/ai_gene.js"></script>
+    <script src="js/Model/world/simulation/ai_brain.js"></script>
+    <script src="js/Model/world/simulation/player_ai.js"></script>
+    <script src="js/Model/world/simulation/population.js"></script>
+    <script src="js/Model/world/simulation/simulation.js"></script>
+            <!--replay-->
+    <script src="js/Model/world/replay/player_passive.js"></script>
+    <script src="js/Model/world/replay/replay.js"></script>
+
+    <!--GUI files-->
+    <!--COMMENT THESE FILES-->
+    <script src="js/GUI/input_controller.js"></script>
+    <script src="js/GUI/gui_object.js"></script>
+    <script src="js/GUI/button.js"></script>
+    <script src="js/GUI/panel.js"></script>
+    <script src="js/GUI/writable_object.js"></script>
+    <script src="js/GUI/slideshow.js"></script>
+    <script src="js/GUI/GUI.js"></script>
+    <!--END OF COMMENTING-->
+    
+    <!--Main script-->
+    <script src="js/app.js"></script>
+</body>
+</html>
